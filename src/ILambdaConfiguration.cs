@@ -4,6 +4,6 @@ namespace Threenine.ConfigTest
 {
     public interface  ILambdaConfiguration
     {
-        IConfiguration Configuration { get; }
+        IConfigurationRoot Configuration { get; }
     }
 }

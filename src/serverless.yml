@@ -9,7 +9,7 @@ package:
 
 functions:
   hello:
-    handler: HelloConfiguration::Threenine.ConfigTest.Handler::Hello
+    handler: HelloConfiguration::Threenine.ConfigTest.Functions.Speak::Greet
 
 
     package:
