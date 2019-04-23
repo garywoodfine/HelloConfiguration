@@ -1,6 +1,6 @@
 using Microsoft.Extensions.Configuration;
 
-namespace AwsDotnetCsharp
+namespace Threenine.ConfigTest
 {
     public interface  ILambdaConfiguration
     {

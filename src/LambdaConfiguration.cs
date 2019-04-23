@@ -1,7 +1,7 @@
 using System.IO;
 using Microsoft.Extensions.Configuration;
 
-namespace AwsDotnetCsharp
+namespace Threenine.ConfigTest
 {
     public class LambdaConfiguration : ILambdaConfiguration
     {

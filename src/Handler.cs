@@ -1,10 +1,9 @@
 using Amazon.Lambda.Core;
-using System;
 using Microsoft.Extensions.DependencyInjection;
 
 [assembly:LambdaSerializer(typeof(Amazon.Lambda.Serialization.Json.JsonSerializer))]
 
-namespace AwsDotnetCsharp
+namespace Threenine.ConfigTest
 {
     public class Handler
     {
