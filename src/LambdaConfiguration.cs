@@ -3,7 +3,7 @@ using Microsoft.Extensions.Configuration;
 
 namespace Threenine.ConfigTest
 {
-    public class LambdaConfiguration : ILambdaConfiguration
+    public  class LambdaConfiguration : ILambdaConfiguration
     {
         public static IConfigurationRoot Configuration  => new ConfigurationBuilder()
             .SetBasePath(Directory.GetCurrentDirectory())

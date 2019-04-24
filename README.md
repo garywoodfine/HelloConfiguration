@@ -1,6 +1,6 @@
 # Hello Configuration
 
-Source Code to support the [Simple Dependency Injection In AWS Lambda](https://garywoodfine.com/dependency-injection-in-aws-lambda/) and [Serverless AWS Lambda Dependency Injection]()  blog posts 
+Source Code to support the [Simple Dependency Injection In AWS Lambda](https://garywoodfine.com/dependency-injection-in-aws-lambda/) and [Serverless AWS Lambda Dependency Injection](https://garywoodfine.com/serverless-aws-lambda-dependency-injection/)  blog posts 
 
 ## Donate
 

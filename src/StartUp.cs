@@ -14,7 +14,9 @@ namespace Threenine.ConfigTest
                     var services = new ServiceCollection();
                     services.Configure<Greeting>(options =>
                         root.GetSection("greeting").Bind(options));
+                    
                     services.AddTransient<ISpeakService, SpeakService>();
+                    
                    return services;
         
                 }
