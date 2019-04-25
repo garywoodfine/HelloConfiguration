@@ -4,8 +4,8 @@ provider:
   name: aws
   runtime: dotnetcore2.1
   environment:
-    SpeakEnvironment__SaySomething: "Eating Coconuts is cool"
-
+    SpeakEnvironment__SaySomething: "Eating coconuts is cool"
+  
 package:
   individually: true
 

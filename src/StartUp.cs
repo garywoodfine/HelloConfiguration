@@ -1,5 +1,6 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Threenine.ConfigTest.Config;
 using Threenine.ConfigTest.Services;
 
 namespace Threenine.ConfigTest
@@ -16,7 +17,7 @@ namespace Threenine.ConfigTest
                         root.GetSection("greeting").Bind(options));
                     
                     services.AddTransient<ISpeakService, SpeakService>();
-                    
+                    services.Configure<SpeakEnvironment>(options => root.GetSection("SpeakEnvironment").Bind(options));
                    return services;
         
                 }

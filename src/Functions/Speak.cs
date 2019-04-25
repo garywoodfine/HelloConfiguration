@@ -8,7 +8,7 @@ namespace Threenine.ConfigTest.Functions
     public class Speak
     {
         private readonly IServiceProvider _serviceProvider;
-       
+
         public Speak(IServiceProvider serviceProvider)
         {
             _serviceProvider = serviceProvider;
@@ -16,9 +16,9 @@ namespace Threenine.ConfigTest.Functions
 
         public Speak() : this(StartUp.Container.BuildServiceProvider())
         {
-            
         }
- [LambdaSerializer(typeof(Amazon.Lambda.Serialization.Json.JsonSerializer))]
+
+        [LambdaSerializer(typeof(Amazon.Lambda.Serialization.Json.JsonSerializer))]
         public string Greet(ILambdaContext context)
         {
             var talk = _serviceProvider.GetService<ISpeakService>();
