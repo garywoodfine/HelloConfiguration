@@ -3,6 +3,8 @@ service: Hello-Configuration
 provider:
   name: aws
   runtime: dotnetcore2.1
+  environment:
+    SpeakEnvironment__SaySomething: "Eating Coconuts is cool"
 
 package:
   individually: true
