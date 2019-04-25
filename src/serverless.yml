@@ -4,7 +4,7 @@ provider:
   name: aws
   runtime: dotnetcore2.1
   environment:
-    SpeakEnvironment__SaySomething: "Eating coconuts is cool"
+    SpeakEnvironment__SaySomething: ${file(env.configs.yml):something}
   
 package:
   individually: true
@@ -12,7 +12,6 @@ package:
 functions:
   hello:
     handler: HelloConfiguration::Threenine.ConfigTest.Functions.Speak::Greet
-
 
     package:
       artifact: bin/release/netcoreapp2.1/hello.zip
